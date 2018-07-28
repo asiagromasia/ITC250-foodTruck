@@ -1,0 +1,95 @@
+/*GLOBAL STYLES*/
+
+html, h1, h2, h3, h4, h5, h6{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h1 {
+    padding: .5em;
+}
+
+h3 {
+    text-align: left;
+}
+html {
+    background-image: url('http://www.tlcdentistry.com/wp-content/uploads/Eating-Healthy_Salinas_CA_Dentist.png');
+    background-color: cadetblue;
+}
+
+body {
+    width: 75%;
+    background-color: whitesmoke;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+.menucontent{
+    width: 100%;
+    text-align:left;
+    padding:10px;
+    line-height: 35px;
+    color: darkslategray;
+}
+
+strong{
+    color: darkslategray;
+}
+
+select{
+    border:0;
+    margin:10px;
+    color: #8f4620;
+    width:auto;
+    font-weight:700;
+    background-color: #ffffff;
+    
+}
+
+label{
+    color: skyblue;
+    font-weight:600;
+}
+
+.extras-checkbox{
+    border:0;
+    margin: 10px;
+}
+
+textarea{
+    width:300px;
+    height:60px;
+}
+
+div.receiptItem, div.notes {
+    border-bottom: 1px dotted blue;
+    padding: 1em;
+    width: 50%;
+    margin: 0 auto;
+    background: ghostwhite;
+}
+
+.receiptItem p, .notes p {
+    margin: .5em;
+}
+
+.itemTotal {
+    float: right;
+    margin-top: -1.5em;
+} 
+
+div.notes {
+    border-bottom: none;
+    margin-top: 1em;
+}
+
+div.notes p {
+    white-space: pre-wrap;
+}
+
+div.totals {
+    background-color: ghostwhite;
+    border: 2px solid green;
+    padding: 1em;
+    width: 50%;
+    margin: 1em auto;
+}
