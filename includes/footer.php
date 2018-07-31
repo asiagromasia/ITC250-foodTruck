@@ -23,6 +23,5 @@
 	        <p align="center"><em>&copy; My Company, 2007 - <?php echo date("Y");?></em></p>
 		</td>
   </tr>
-</table>
 </body>
 </html>
