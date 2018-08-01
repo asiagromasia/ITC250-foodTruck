@@ -46,8 +46,8 @@ foreach ($data as $itemName => $itemDetails)
             if (is_array($value) && sizeof($value) > 0)
             {
                 $order .=  '<p> Extras: '. implode(", ", $value).'</p>';
-                //add 25 cents for each extra ordered. 
-                $extras_cost = (sizeof($value) * .25)*$itemDetails["quantity"];
+                //add 1.25 cents for each extra ordered. 
+                $extras_cost = (sizeof($value) * 1.25)*$itemDetails["quantity"];
                 $itemTotal += $extras_cost;
             } 
             else if (!is_array($value))  //not an array, print normally
@@ -72,7 +72,7 @@ $total = number_format($totalTax + $subtotal,2);
 $notes = htmlspecialchars($_POST['special_instructions']);
 
 $order .= '<div class="notes">
-            <p><strong> Notes: </strong></p>
+            <p><strong> Additional instructions: </strong></p>
             <p>'. $notes. '</p>
             </div>
             <div class="totals">

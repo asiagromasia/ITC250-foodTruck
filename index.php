@@ -18,7 +18,7 @@ require 'includes/menuview.php';
 //Renders the form by calling the get_menu method of a new MenuDisplay
 function show_form()
 {
-	echo '<h2>Welcom to our Food & Juice Truck</h2>
+	echo '<h2>Welcome to our Food & Juice Truck</h2>
  	<form action="index.php" method="post">';
 	$menu = new menuview();
 	echo $menu->get_menu();
@@ -45,13 +45,18 @@ function show_receipt()
 	<meta charset="utf-8" />
 	<meta name="robots" content="noindex,nofollow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<meta name="description" content="A food Truck Menu/Ordering Application" />
+	<meta name="description" content="A Food Truck Menu/Ordering Application" />
 	<link href='https://fonts.googleapis.com/css?family=Unkempt:400,700|Averia+Sans+Libre:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/foodtruck.css">
  </head>
  <body>
  	<div class="site-wrapper">
+        
+        <!--if there is an error msg style it and print -->
+       <?php if (!empty($error_message)) : ?>
+           <p class="error"><?php echo $error_message; ?></p>
+       <?php endif; ?>  
+        
  	<?php 
  		//Sense whether to display menu or receipt based on request type. 
  		if ($_POST)

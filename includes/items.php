@@ -29,7 +29,6 @@ class items extends menucontent
 		//give basic information to parent class (MenuItem). 
 		parent::__construct($name, $description, $price, $quantities);
 
-
 		//initialize properties unique to this class
 		$this->options = $options;
 		$this->extras = $extras;
@@ -49,7 +48,7 @@ class items extends menucontent
 		}
 		$field .= '</select>';
 
-		$field .= "<br/> Extras (25 &cent; each) : ";
+		$field .= "<br/> Extras ($1.25 each) : ";
 
 
 		foreach ($this->extras as $extra)

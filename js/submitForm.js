@@ -1,10 +1,10 @@
 /*
 *submitForm.js 
 *
-*This script preserves the object-oriented abilities of the menu items by packaging items ordred as js objects, then *storing them as the value of the hidden form field "order_data", before finally submitting the form to send the data *via POST.
+* This script preserves the object-oriented abilities of the menu items by packaging items ordred as js objects, then storing them as the value of the hidden form field "order_data", before finally submitting the form to send the data via POST.
 *   
 * @package FoodTruck
-* @authors Kelsie Brown <kelsie.brown@seattlecentral.edu>, Joanna Gromadzka<joanna.gromadzka@seattlecentral.edu>,
+* @authors Kelsie Brown <kelsie.brown@seattlecentral.edu>, Joanna Gromadzka <joanna.gromadzka@seattlecentral.edu>,
 * Eden Dubiso <eden.dubiso@seattlecentral.edu>
 * @version 0.1 2018/07/28
 * @link http://www.edendu.com/

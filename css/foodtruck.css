@@ -1,29 +1,37 @@
 /*GLOBAL STYLES*/
 
-html, h1, h2, h3, h4, h5, h6{
-    font-family: Verdana, Geneva, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unkempt', 'Verdana', 'Geneva', sans-serif;
 }
 
 h1 {
     padding: .5em;
+    color: navy;
 }
 
 h3 {
     text-align: left;
 }
+
 html {
-    background-image: url('http://www.tlcdentistry.com/wp-content/uploads/Eating-Healthy_Salinas_CA_Dentist.png');
+    font-family: 'Averia Sans Libre', 'Verdana', sans-serif;
+    background-image: url('http://kelsiebrown.com/itc250/p3/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:2em;
     background-color: cadetblue;
 }
 
 body {
-    width: 75%;
+    width: 65%;
     background-color: whitesmoke;
     margin: 2em auto;
     padding: 1em;
     text-align: center;
+    border: 2px solid navy;
 }
-.menucontent{
+
+.menucontent {
     width: 100%;
     text-align:left;
     padding:10px;
@@ -31,11 +39,11 @@ body {
     color: darkslategray;
 }
 
-strong{
+strong {
     color: darkslategray;
 }
 
-select{
+select {
     border:0;
     margin:10px;
     color: #8f4620;
@@ -45,19 +53,25 @@ select{
     
 }
 
-label{
-    color: skyblue;
-    font-weight:600;
+label {
+    width: 15em;
+    float: left;
+    margin-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    clear:both;
+    color: navy;
+    font-weight:700;
 }
 
-.extras-checkbox{
+.extras-checkbox {
     border:0;
     margin: 10px;
 }
 
-textarea{
-    width:300px;
-    height:60px;
+textarea {
+    width: 300px;
+    height: 60px;
 }
 
 div.receiptItem, div.notes {
@@ -92,4 +106,9 @@ div.totals {
     padding: 1em;
     width: 50%;
     margin: 1em auto;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
 }
